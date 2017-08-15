@@ -51,6 +51,18 @@ const struct chainparams networks[] = {
      .cli = "litecoin-cli",
      .cli_args = "",
      .dust_limit = 100000,
+     .testnet = false},
+    {.index = 4,
+     .network_name = "monacoin",
+     .genesis_blockhash = {{.u.u8 = {0xff, 0x9f, 0x1c, 0x01, 0x16, 0xd1, 0x9d,
+				     0xe7, 0xc9, 0x96, 0x38, 0x45, 0xe1, 0x29,
+				     0xf9, 0xed, 0x1b, 0xfc, 0x0b, 0x37, 0x6e,
+				     0xb5, 0x4f, 0xd7, 0xaf, 0xa4, 0x2e, 0x0d,
+				     0x41, 0x8c, 0x8b, 0xb6}}},
+     .rpc_port = 9402,
+     .cli = "monacoin-cli",
+     .cli_args = "",
+     .dust_limit = 100000,
      .testnet = false}};
 
 const struct chainparams *chainparams_for_network(const char *network_name)
