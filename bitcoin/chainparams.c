@@ -49,7 +49,7 @@ const struct chainparams networks[] = {
 				     0x7e, 0x04, 0xbf, 0xe2}}},
      .rpc_port = 9332,
      .cli = "litecoin-cli",
-     .cli_args = "",
+     .cli_args = NULL,
      .dust_limit = 100000,
      .testnet = false},
     {.index = 4,
@@ -61,7 +61,7 @@ const struct chainparams networks[] = {
 				     0x41, 0x8c, 0x8b, 0xb6}}},
      .rpc_port = 9402,
      .cli = "monacoin-cli",
-     .cli_args = "",
+     .cli_args = NULL,
      .dust_limit = 100000,
      .testnet = false}};
 
